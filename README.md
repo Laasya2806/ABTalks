@@ -61,7 +61,6 @@ Stretch challenges have their own title, requirements, checklist, and time estim
 - Growth/Stretch tracking
 - Consistency milestone nudges
 - Submission/proof-of-work flow
-- Reset State for clean testing
 - Responsive layout tested around 360px mobile width
 - Dark, focused developer-oriented interface
 - Local/mock state architecture suitable for the hackathon prototype
@@ -75,7 +74,6 @@ For example:
 - Completing Web Development Day 12 updates only Web Development.
 - DSA keeps its own streak, completed days, Growth count, and submission state.
 - AI/ML keeps its own independent state.
-- Reset State restores all three tracks to their initial mock state.
 
 This prevents completing one track from incorrectly making the others appear completed.
 
@@ -163,7 +161,6 @@ The final implementation was manually tested for:
 - Track-isolated progress
 - Track-specific milestone behavior
 - Submission and scoring behavior
-- Reset State
 - Desktop layout
 - Narrow mobile-style layout around 360px
 - Production build

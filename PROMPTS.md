@@ -380,18 +380,17 @@ The same application remained usable without creating a separate mobile implemen
 
 ---
 
-# 12. Reset State Testing
+# 12. Development Reset Controls
 
-Reset State was deliberately preserved throughout the debugging process.
+During the iterative development and debugging process, a temporary Reset State control was used to test track-isolated progress and state resets.
 
-Testing confirmed that:
+Testing during development confirmed that:
 
-- Track-specific progress can be changed.
+- Track-specific progress can be changed independently.
 - Completing one track does not modify another.
-- Reset State restores the tracks to their initial mock states.
-- The application can be tested repeatedly from a clean state.
+- State resets restored the tracks to their initial mock states for repeated test runs.
 
-This was particularly important because the application uses local/mock state rather than a backend database.
+Once debugging was complete, the Reset State control was removed from the final submission UI to keep the production experience focused and production-ready.
 
 ---
 
@@ -463,8 +462,8 @@ The final application was manually checked for:
 
 ### State management
 
-- Reset State
-- Clean reset of all tracks
+- Local/mock state architecture
+- Track-isolated state management
 - No backend/database dependency
 
 ### Responsive behavior
@@ -490,7 +489,7 @@ Throughout the final implementation passes, the following constraints were inten
 4. Do not introduce a backend/database just for the hackathon.
 5. Reuse existing mock challenge data.
 6. Preserve the local/mock state architecture.
-7. Keep Reset State functional.
+7. Maintain state reset capability during development and testing.
 8. Make the smallest reliable changes for bugs.
 9. Do not redesign the UI when fixing functional bugs.
 10. Manually test changes in the browser.
@@ -528,8 +527,10 @@ The major functional issues discovered during testing were fixed before final su
 - Navbar navigation became track-aware.
 - Dashboard and Day 12 received direct track switching.
 - Core and Stretch content became meaningfully different.
-- Reset State remained functional.
+- The Reset State control was used during development and testing before being removed for the clean submission UI.
 - The final application was tested at desktop and narrow mobile widths.
 - The production build passed.
 - The application was deployed successfully to Vercel.
+
+> **Note on Reset State:** The Reset State control was used during development and testing with the local/mock state architecture, but it was removed from the final submission UI to keep the production experience focused.
 
