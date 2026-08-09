@@ -10,7 +10,18 @@ export const ChallengeProvider = ({ children }) => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        // Sanitize any legacy demo arjunmehta URLs from saved state
+        Object.keys(parsed).forEach(key => {
+          if (parsed[key]?.lastSubmission) {
+            const gh = parsed[key].lastSubmission.githubUrl || '';
+            const li = parsed[key].lastSubmission.linkedinUrl || '';
+            if (gh.includes('arjunmehta') || li.includes('arjunmehta')) {
+              delete parsed[key].lastSubmission;
+            }
+          }
+        });
+        return parsed;
       }
     } catch (e) {
       // Fallback to initial mock data if JSON parse fails

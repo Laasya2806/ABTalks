@@ -19,9 +19,10 @@ export default function DayChallengePage() {
   const studentData = getStudentData(trackParam);
 
   // Local state for mode selection and inputs
+  const getCleanSubmissionUrl = (url) => (url && !url.includes('arjunmehta') ? url : '');
   const [selectedMode, setSelectedMode] = useState(studentData.completedMode || 'core');
-  const [githubUrl, setGithubUrl] = useState(studentData.lastSubmission?.githubUrl || 'https://github.com/arjunmehta/abtalks-day12');
-  const [linkedinUrl, setLinkedinUrl] = useState(studentData.lastSubmission?.linkedinUrl || 'https://linkedin.com/posts/arjunmehta-day12-abtalks');
+  const [githubUrl, setGithubUrl] = useState(getCleanSubmissionUrl(studentData.lastSubmission?.githubUrl));
+  const [linkedinUrl, setLinkedinUrl] = useState(getCleanSubmissionUrl(studentData.lastSubmission?.linkedinUrl));
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
