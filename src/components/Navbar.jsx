@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Flame, LayoutDashboard, Calendar, RefreshCw } from 'lucide-react';
-import { useChallenge } from '../context/ChallengeContext';
+import { Flame, LayoutDashboard, Calendar } from 'lucide-react';
 import './Navbar.css';
 
 export default function Navbar() {
   const location = useLocation();
-  const { resetProgress } = useChallenge();
 
   const searchParams = new URLSearchParams(location.search);
   const activeTrack = searchParams.get('track');
@@ -62,15 +60,6 @@ export default function Navbar() {
             Day 12
           </Link>
         </nav>
-
-        <button
-          onClick={resetProgress}
-          className="reset-btn"
-          title="Reset local storage state for testing"
-        >
-          <RefreshCw size={14} />
-          <span className="reset-text">Reset State</span>
-        </button>
       </div>
     </header>
   );
