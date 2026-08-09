@@ -6,7 +6,7 @@ ABTalks is a 60-day engineering challenge platform designed to turn **consistenc
 
 ## 🚀 Live Demo
 
-**[Open ABTalks](https://abtalks-xp1tg53nl-laasyamorampudi-9908s-projects.vercel.app/)**
+**[Open ABTalks](https://abtalks-theta.vercel.app)**
 
 ## 💡 The Idea
 
