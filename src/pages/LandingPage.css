@@ -1,0 +1,441 @@
+/* LANDING PAGE STYLES */
+
+.landing-page {
+  padding-bottom: 4rem;
+}
+
+/* HERO */
+.hero-section {
+  padding: 3.5rem 0 3rem 0;
+  border-bottom: 1px solid var(--border-color);
+  background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.12) 0%, rgba(11, 13, 16, 0) 70%);
+}
+
+.hero-content {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-badge {
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 3.25rem;
+  }
+}
+
+.highlight-text {
+  background: linear-gradient(135deg, var(--accent-orange), var(--stretch-amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-btn {
+  padding: 0.875rem 1.75rem;
+  font-size: 1.05rem;
+}
+
+/* PHILOSOPHY SECTION */
+.philosophy-section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.section-tag {
+  font-size: 0.75rem;
+  color: var(--accent-orange);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0.35rem 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.section-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.philosophy-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.consistency-card {
+  border-top: 3px solid var(--accent-orange);
+}
+
+.growth-card {
+  border-top: 3px solid var(--stretch-amber);
+  background: linear-gradient(180deg, rgba(163, 230, 53, 0.04) 0%, var(--bg-card) 100%);
+}
+
+.philo-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.philo-icon-box.orange {
+  background-color: var(--accent-orange-bg);
+  color: var(--accent-orange);
+}
+
+.philo-icon-box.amber {
+  background-color: var(--stretch-amber-bg);
+  color: var(--stretch-amber);
+}
+
+.philo-title {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: 0.04em;
+}
+
+.philo-tagline {
+  font-size: 0.8125rem;
+  color: var(--text-dim);
+  margin-bottom: 1.25rem;
+}
+
+.philo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.philo-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.philo-check {
+  color: var(--accent-orange);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.growth-card .philo-check {
+  color: var(--stretch-amber);
+}
+
+.philo-footer-metric {
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  font-size: 0.8125rem;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.growth-metric {
+  color: var(--stretch-amber);
+}
+
+.hero-cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero-subtext {
+  font-size: 0.8125rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
+
+/* BUILD -> SHIP -> SHOW FRAMEWORK SECTION */
+.build-ship-section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.build-ship-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .build-ship-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.framework-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.framework-card:hover {
+  border-color: var(--accent-orange-border);
+  transform: translateY(-2px);
+}
+
+.framework-step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--accent-orange);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.framework-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--accent-orange-bg);
+  color: var(--accent-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.framework-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.framework-tagline {
+  font-size: 0.8125rem;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.framework-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.reinforce-banner {
+  padding: 1.125rem 1.5rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-bright);
+  font-size: 0.95rem;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.reinforce-banner strong {
+  color: var(--accent-orange);
+}
+
+/* TRACKS SECTION */
+.tracks-section {
+  padding: 3.5rem 0;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .tracks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.track-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.track-card:hover {
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+}
+
+.track-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+}
+
+.track-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background-color: var(--accent-orange-bg);
+  color: var(--accent-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-student-count {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.track-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.15rem;
+}
+
+.track-positioning {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  margin-bottom: 0.75rem;
+}
+
+.track-progression-box {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.65rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 0.875rem;
+  line-height: 1.35;
+}
+
+.track-description {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+.track-outcome-box {
+  border-left: 2px solid var(--stretch-amber);
+  padding-left: 0.625rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.78rem;
+  color: var(--text-main);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.track-action {
+  margin-top: auto;
+}
+
+.bottom-cta-banner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(163, 230, 53, 0.08));
+  border: 1px solid var(--accent-orange-border);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+  .bottom-cta-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.banner-content h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.banner-content p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}

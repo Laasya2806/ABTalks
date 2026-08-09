@@ -1,0 +1,251 @@
+/* DASHBOARD PAGE STYLES */
+
+.dashboard-page {
+  padding: 1.5rem 0 3.5rem 0;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.dashboard-header-section {
+  padding-bottom: 0.5rem;
+}
+
+.greeting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.user-greeting {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.user-track-subtitle {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.user-track-subtitle strong {
+  color: var(--text-main);
+}
+
+.day-progress-pill {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-orange);
+  white-space: nowrap;
+}
+
+/* SECTION LABELS */
+.section-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.section-tag-bold {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+}
+
+.status-badge-completed {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--success-green);
+  font-weight: 600;
+}
+
+/* ENCOURAGEMENT BANNER (NUDGE) */
+.nudge-banner {
+  background: linear-gradient(90deg, rgba(163, 230, 53, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%);
+  border: 1px solid var(--stretch-amber-border);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.nudge-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background-color: var(--stretch-amber-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nudge-body {
+  flex: 1;
+}
+
+.nudge-body h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.15rem;
+}
+
+.nudge-body p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.nudge-cta {
+  flex-shrink: 0;
+  border-color: var(--stretch-amber-border);
+  color: var(--stretch-amber);
+}
+
+.nudge-cta:hover {
+  background-color: var(--stretch-amber-bg);
+}
+
+/* METRICS */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.875rem;
+}
+
+.metric-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.metric-consistency {
+  border-left: 3px solid var(--accent-orange);
+}
+
+.metric-growth {
+  border-left: 3px solid var(--stretch-amber);
+}
+
+.metric-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.metric-icon-box.orange {
+  background-color: var(--accent-orange-bg);
+  color: var(--accent-orange);
+}
+
+.metric-icon-box.amber {
+  background-color: var(--stretch-amber-bg);
+  color: var(--stretch-amber);
+}
+
+.metric-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ESSENTIALS */
+.essentials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .essentials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.essential-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.essential-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.essential-title {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.essential-val {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background-color: var(--bg-main);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin: 0.35rem 0 0.5rem 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-orange), var(--stretch-amber));
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+.essential-footer {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.standing-value {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0.15rem 0;
+}
